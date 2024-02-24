@@ -15,7 +15,7 @@ class Vector
             $this->y = $y;
             $this->z = $z;
         } else {
-            throw new InvalidArgumentException('Координаты вектора должны быть числами.');
+            exit('Координаты вектора должны быть числами.');
         }
     }
 
