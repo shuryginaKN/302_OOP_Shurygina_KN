@@ -1,7 +1,11 @@
 <?php
 
-require_once 'Book.php';
-require_once 'BooksList.php';
+// require_once 'Book.php';
+// require_once 'BooksList.php';
+namespace App;
+
+use App\Book;
+use App\BooksList;
 
 function runTest()
 {

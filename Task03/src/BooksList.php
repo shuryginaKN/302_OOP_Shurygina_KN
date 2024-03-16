@@ -1,9 +1,9 @@
 <?php
 
-// namespace Model;
+namespace App;
 
-// use Model\Book;
-require_once 'Book.php';
+use App\Book;
+// require_once 'Book.php';
 
 class BooksList
 {
