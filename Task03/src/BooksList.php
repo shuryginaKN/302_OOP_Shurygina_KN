@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Book;
+
 // require_once 'Book.php';
 
 class BooksList
@@ -14,16 +15,15 @@ class BooksList
         $this->books[] = $book;
     }
 
-    public function count() : int 
+    public function count(): int
     {
         return count($this->books);
     }
 
-    public function get(int $n) : Book
+    public function get(int $n): Book
     {
-        if ($n > 0 && $n <= count($this->books))
-        {
-            return $this->books[$n-1];
+        if ($n > 0 && $n <= count($this->books)) {
+            return $this->books[$n - 1];
         }
     }
 
@@ -46,8 +46,4 @@ class BooksList
             echo 'Файл не найден';
         }
     }
-
-    
 }
-
-?>

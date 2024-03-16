@@ -1,11 +1,10 @@
 <?php
 
-// require_once 'Book.php';
-// require_once 'BooksList.php';
-namespace App;
+require_once __DIR__ . '/vendor/autoload.php';
 
 use App\Book;
 use App\BooksList;
+
 
 function runTest()
 {
@@ -21,7 +20,7 @@ function runTest()
             "Smith J." . PHP_EOL .
             "O'Reily" . PHP_EOL .
             "2020" . PHP_EOL . PHP_EOL;
-    echo    "Получено:" . PHP_EOL . 
+    echo    "Получено:" . PHP_EOL .
             $book1->getId() . PHP_EOL .
             $book1->getTitle() . PHP_EOL .
             $book1->getAuthors() .
@@ -50,7 +49,7 @@ function runTest()
             "Автор3: Author 3" . PHP_EOL .
             "Издательство: Publisher" . PHP_EOL .
             "Год: 2024" . PHP_EOL . PHP_EOL;
-    echo    "Получено: " . PHP_EOL .  
+    echo    "Получено: " . PHP_EOL .
             $booklist->get(2) . PHP_EOL;
 
     $fileName = 'C:\OOP\302_OOP_Shurygina_KN\Task03\file.txt';
@@ -63,6 +62,4 @@ function runTest()
     echo    "Получено: ";
     $booklist   ->load('C:\OOP\302_OOP_Shurygina_KN\Task03\kbl.txt');
     echo PHP_EOL . PHP_EOL;
-
-    
 }

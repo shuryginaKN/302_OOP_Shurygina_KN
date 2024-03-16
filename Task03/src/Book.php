@@ -54,8 +54,7 @@ class Book
     public function getAuthors()
     {
         $result = "";
-        foreach ($this->authors as $i => $author)
-        {
+        foreach ($this->authors as $i => $author) {
             $result .= "$author \n";
         }
         return $result;
@@ -73,10 +72,9 @@ class Book
 
     public function __toString()
     {
-        $result = "Id: $this->id \n". 
+        $result = "Id: $this->id \n" .
                 "Название: $this->title \n";
-        foreach ($this->authors as $i => $author)
-        {
+        foreach ($this->authors as $i => $author) {
             $result .= "Автор" . ($i + 1) . ": $author \n";
         }
         $result .= "Издательство: $this->publisher \n" .
