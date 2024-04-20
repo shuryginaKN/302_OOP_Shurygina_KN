@@ -11,7 +11,6 @@ class BooksListTest extends TestCase
     private $book1;
     private $book2;
     private $book3;
-// private $bookslist;
 
     public function booksList()
     {
@@ -40,8 +39,8 @@ class BooksListTest extends TestCase
         $bookslist->add($this->book2);
         $bookslist->add($this->book3);
         $this->assertSame($this->book1, $bookslist->current());
-// $bookslist->next();
-        // $this->assertSame($this->book2, $booksList->current());
+        $bookslist->next();
+        $this->assertSame($this->book2, $booksList->current());
     }
 
     public function testNext(): void
